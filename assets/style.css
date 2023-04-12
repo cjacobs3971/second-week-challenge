@@ -1,0 +1,278 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2e9f7;
+    
+}
+
+header {
+    background-color: #333;
+    color: #bd1717;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #ff8c00;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(66, 66, 66, 0.3) 0%,
+        rgba(4, 0, 92, 0.6) 100%
+      );
+    position: relative;
+}
+
+.hero-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #333;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.hero-section img {
+    width: 400px;
+    border-radius: 20%;
+    border: 5px solid #eae9ea;
+}
+
+.about-section {
+    padding: 100px 0;
+    background-color: #bdc0ef;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+}
+
+.portfolio-section {
+    padding: 100px 0;
+    background-color: #3fa5ab;
+}
+
+.portfolio-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+.portfolio-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-section li {
+    margin: 20px;
+    width: 300px;
+    border-radius: 10%;
+    background-color: #fff;
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.861) 0%,
+        rgb(90, 62, 129) 100%
+      );
+    box-shadow: 0 0 100px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.portfolio-section li:hover {
+    box-shadow: 0 0 100px 100px rgba(255, 255, 255, 0.4);
+}
+
+.portfolio-section img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-section h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.portfolio-section p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px;
+    color: #333;
+}
+
+.portfolio-section li:first-child img {
+   /* make the first portfolio description larger */
+width: 100%;
+height: auto;
+max-height: 300px;
+object-fit: cover;
+}
+
+.contact-section {
+padding: 100px 0;
+background-color: #c7c7c7;
+}
+
+.contact-section h2 {
+font-size: 2.5rem;
+text-align: center;
+margin-bottom: 50px;
+color: #333;
+}
+
+.contact-section form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 1.8rem;
+}
+
+.contact-section form label, .contact-section form textarea {
+font-size: 2.25rem;
+margin-bottom: 10px;
+color: #333;
+}
+/* changes the stuff for persons input*/
+.contact-section form input, .contact-section form textarea, .contact-section form button {
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: none;
+font-size: 1.55rem;
+}
+
+.contact-form input[type="submit"] {
+background-color: #333;
+color: #ffffff;
+font-size: 1.25rem;
+cursor: pointer;
+
+}
+
+.c
+
+footer {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+nav ul {
+flex-direction: column;
+}
+nav li {
+margin: 20px 0;
+}
+.hero-section {
+height: 50vh;
+}
+.hero-section h1, .hero-section p {
+font-size: medium;
+margin-top: 20px;
+}
+.hero-section img {
+width: 150px;
+}
+.about-section h2,
+.portfolio-section h2,
+.contact-section h2 {
+font-size: 2rem;
+}
+.portfolio-section li {
+width: 250px;
+}
+}
+
+@media only screen and (max-width: 576px) {
+.hero-section img {
+width: 100px;
+}
+.about-section h2,
+.portfolio-section h2,
+.contact-section h2 {
+font-size: 1.5rem;
+}
+.portfolio-section li {
+width: 200px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.portfolio-section li {
+margin: 10px;
+}
+}
+
+@media only screen and (max-width: 375px) {
+.portfolio-section li {
+width: 150px;
+}
+}
+
+@media only screen and (max-width: 320px) {
+.hero-section img {
+width: 80px;
+}
+}
