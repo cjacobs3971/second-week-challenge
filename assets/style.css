@@ -80,6 +80,8 @@ nav a:hover {
 .intro p {
     font-size: 1.5rem;
     margin-bottom: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
     color: var(--dark);
 }
 
@@ -104,6 +106,8 @@ nav a:hover {
 .about-section p {
     font-size: 1.25rem;
     line-height: 1.5;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
     color: var(--dark);
 }
