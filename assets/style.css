@@ -47,7 +47,6 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-image: linear-gradient(
         rgba(66, 66, 66, 0.3) 0%,
         rgba(4, 0, 92, 0.6) 100%
@@ -80,6 +79,7 @@ nav a:hover {
 
 .intro p {
     font-size: 1.5rem;
+    padding-top: 10px;
     margin-bottom: 40px;
     margin-left: 5%;
     margin-right: 5%;
