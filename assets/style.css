@@ -172,7 +172,7 @@ nav a:hover {
    /* make the first portfolio description larger */
 width: 100%;
 height: auto;
-max-height: 300px;
+min-height: 600px;
 object-fit: cover;
 }
 
