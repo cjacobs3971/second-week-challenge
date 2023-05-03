@@ -98,14 +98,14 @@ nav a:hover {
 }
 
 .about-section h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: center;
     margin-bottom: 50px;
     color: var(--dark);
 }
 
 .about-section p {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     margin-left: 5%;
     margin-right: 5%;
@@ -238,7 +238,7 @@ margin: 20px 0;
 height: 50vh;
 }
 .hero-section h1, .hero-section p {
-font-size: medium;
+font-size: 1.5rem;
 margin-top: 20px;
 }
 .hero-section img {
@@ -263,6 +263,12 @@ width: 150px;
 .contact-section h2 {
 font-size: 1.5rem;
 }
+.hero-section h1, .hero-section p {
+    font-size: 1.3rem;
+}
+.hero-section h1 {
+    padding-top: 60px;
+ }
 .portfolio-section li {
 width: 200px;
 }
