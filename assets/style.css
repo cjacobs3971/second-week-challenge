@@ -150,7 +150,8 @@ nav a:hover {
 
 .portfolio-section img {
     width: 100%;
-    height: auto;
+    height: 50%; 
+    
 }
 
 .portfolio-section h3 {
@@ -210,7 +211,7 @@ border: none;
 font-size: 1.55rem;
 }
 
-.contact-form input[type="submit"] {
+.contact-section form input[type="submit"] {
 background-color: var(--dark);
 color: #ffffff;
 font-size: 1.25rem;
