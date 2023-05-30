@@ -117,6 +117,7 @@ nav a:hover {
 .portfolio-section {
     padding: 100px 0;
     background-color: #323259;
+    /*background-image: url(./images/port-background.jpg);*/
 }
 
 .portfolio-section h2 {
@@ -137,8 +138,8 @@ nav a:hover {
     border-radius: 10%;
     background-color: #fff;
     background-image: radial-gradient(
-        rgba(255, 255, 255, 0.861) 0%,
-        rgb(42, 34, 88) 100%
+        rgba(84, 160, 236, 0.822) 0%,
+        rgb(65, 53, 129) 100%
       );
     box-shadow: 0 0 100px rgba(0,0,0,0.2);
     transition: box-shadow 0.3s ease-in-out;
