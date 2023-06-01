@@ -262,6 +262,7 @@ width: 250px;
 .portfolio-section p {
     display: none;
 }
+
 .portfolio-section img {
     height: 80%;
 }
@@ -300,6 +301,9 @@ font-size: 1.5rem;
  }
 .portfolio-section li {
 width: 200px;
+}
+.portfolio-section h3 {
+    font-size: 1.3rem;
 }
 }
 
