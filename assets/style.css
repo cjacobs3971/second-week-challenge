@@ -54,7 +54,12 @@ nav a:hover {
       );
     position: relative;
 }
-
+.hero-section img {
+    width: 400px;
+    height: 600px;
+    border-radius: 20%;
+    border: 5px solid #eae9ea;
+}
 .hero-section::after {
     content: "";
     display: block;
@@ -87,11 +92,7 @@ nav a:hover {
     color: var(--dark);
 }
 
-.hero-section img {
-    width: 400px;
-    border-radius: 20%;
-    border: 5px solid #eae9ea;
-}
+
 
 .about-section {
     padding: 100px 0;
@@ -130,6 +131,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    list-style: none;
 }
 
 .portfolio-section li {
@@ -138,8 +140,8 @@ nav a:hover {
     border-radius: 10%;
     background-color: #fff;
     background-image: radial-gradient(
-        rgba(84, 160, 236, 0.822) 0%,
-        rgb(65, 53, 129) 100%
+        rgba(83, 163, 244, 0.822) 30%,
+        rgb(54, 45, 108) 100%
       );
     box-shadow: 0 0 100px rgba(0,0,0,0.2);
     transition: box-shadow 0.3s ease-in-out;
@@ -182,6 +184,7 @@ object-fit: cover;
 .contact-section {
 padding: 100px 0;
 background-color: #c7c7c7;
+/*background-image: url(./images/contact-background.jpg);*/
 }
 
 .contact-section h2 {
@@ -232,17 +235,18 @@ footer {
 
 @media only screen and (max-width: 768px) {
 nav ul {
-flex-direction: column;
+display: flex;
+justify-content: space-between;
 }
 nav li {
-margin: 20px 0;
+margin-left: 1%;
 }
 .hero-section {
 height: 50vh;
 }
 .hero-section h1, .hero-section p {
-font-size: 1.5rem;
-margin-top: 20px;
+font-size: 1.4rem;
+margin-top: 0px;
 }
 .hero-section img {
 width: 150px;
@@ -255,8 +259,30 @@ font-size: 2rem;
 .portfolio-section li {
 width: 250px;
 }
+.portfolio-section p {
+    display: none;
 }
+.portfolio-section img {
+    height: 80%;
+}
+}
+@media only screen and (max-width: 598px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .hero-section {
+        height: 50vh;
+        }
+    .hero-section h1 {
+        font-size: 1.6rem;
+        margin-top: 0px;
+        }
+    .hero-section p {
+            display: none;
+            }
+}
 @media only screen and (max-width: 576px) {
 .hero-section img {
 width: 150px;
