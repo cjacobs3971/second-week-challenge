@@ -142,7 +142,7 @@ nav a:hover {
     background-color: #fff;
     background-image: radial-gradient(
         rgba(83, 163, 244, 0.822) 30%,
-        rgb(54, 45, 108) 100%
+        rgb(69, 63, 107) 100%
       );
     box-shadow: 0 0 100px rgba(0,0,0,0.2);
     transition: box-shadow 0.3s ease-in-out;
