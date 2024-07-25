@@ -174,13 +174,6 @@ nav a:hover {
     color: var(--dark);
 }
 
-.portfolio-section li:first-child img {
-   /* make the first portfolio description larger */
-width: 100%;
-height: auto;
-min-height: 600px;
-object-fit: cover;
-}
 .portfolio-section button {
 display: flex;
 align-items: center;
